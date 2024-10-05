@@ -1,11 +1,11 @@
-terraform {
-  cloud {
-    organization = "croffle_ma_sit_dda"
-    workspaces {
-      name = "mkhong"
-    }
-  }
-}
+# terraform {
+#   cloud {
+#     organization = "croffle_ma_sit_dda"
+#     workspaces {
+#       name = "mkhong"
+#     }
+#   }
+# }
 
 terraform {
   required_providers {
