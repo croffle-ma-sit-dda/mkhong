@@ -3,6 +3,11 @@ variable "env_set" {
   type = string
 }
 
+variable "region_set"{
+  description = "region"
+  type = string
+}
+
 variable "azs" {
   description = "Available zone"
   type = list(string)
@@ -27,4 +32,14 @@ variable "private_subnets" {
 variable "public_subnets" {
     description = "public subnet"
     type = list(string)
+}
+
+variable "public_subnet_names" {
+  description = "public_subnet_names"
+  type = list(string)
+}
+
+variable "private_subnet_names" {
+  description = "private_subnet_names"
+  type = list(string)
 }

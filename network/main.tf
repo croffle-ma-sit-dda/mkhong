@@ -17,7 +17,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-northeast-1"
+  region = var.region_set
 }
 
 module "vpc" {
@@ -26,7 +26,9 @@ module "vpc" {
   cidr            = var.cidr
   azs             = var.azs
   private_subnets = var.private_subnets
+  private_subnet_names = var.private_subnet_names
   public_subnets  = var.public_subnets
+  public_subnet_names = var.public_subnet_names
 
   enable_nat_gateway = true
   single_nat_gateway = true
